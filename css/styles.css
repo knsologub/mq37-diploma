@@ -904,10 +904,11 @@
   /*MAIN*/
   .main-content {
     padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .main {
-    margin-left: 20px;
     width: 381px;
   }
 
@@ -935,9 +936,6 @@
   }
 
   /*ASIDE*/
-  .aside {
-    margin-right: 20px;
-  }
 
   .section {
     display: flex;
