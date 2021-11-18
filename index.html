@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
     <title>Adaptive layout</title>
   </head>
@@ -14,7 +15,13 @@
             <a href="#0" class="logo"
               ><img src="svg/noemi-logo.svg" alt="Logo"
             /></a>
+
             <nav class="menu">
+              <!-- Меню бургер -->
+              <div class="menu-button">
+                <span class="hamburger"></span>
+              </div>
+              <!-- Конец меню бургер -->
               <ul class="menu-list">
                 <li class="menu-list-item">
                   <a href="#0" class="link">Главная</a>
@@ -513,6 +520,7 @@
           <article class="product-items">
             <img
               src="img/shop-item-desk1.jpg"
+              srcset="img/shop-item-tablet1.jpg 1x"
               alt="Подушка"
               class="product-img"
             />
@@ -545,6 +553,7 @@
           <article class="product-items">
             <img
               src="img/shop-item-desk2.jpg"
+              srcset="img/shop-item-tablet2.jpg 1x"
               alt="Подушка"
               class="product-img"
             />
@@ -575,6 +584,7 @@
           <article class="product-items">
             <img
               src="img/shop-item-desk3.jpg"
+              srcset="img/shop-item-tablet3.jpg 1x"
               alt="Подушка"
               class="product-img"
             />
