@@ -7,7 +7,64 @@
     <title>Adaptive layout</title>
   </head>
 
-  <body>
+  <body class="body">
+    <!-- Pop up Window -->
+    <div class="popup-container">
+      <div class="popup">
+        <div class="popup-title section-title-style line-object">
+          <h4 class="feedback-header">Ваш фидбек</h4>
+        </div>
+        <form action="#" class="popup-form">
+          <label for="">
+            <span class="popup-text">Как часто вы заходите на сайт?</span>
+            <select class="popup-list unstyle">
+              <option selected value="">Почти каждый день</option>
+              <option value="">Раз в несколько дней</option>
+              <option value="">Раз в несколько недель</option>
+              <option value="">Несколько раз в год</option>
+            </select>
+          </label>
+          <div class="popup-radio-container">
+            <span class="popup-text">Вы подписаны на e-mail-рассылку?</span>
+            <input
+              class="popup-radio unstyle"
+              type="radio"
+              checked
+              value="1"
+              name="answer"
+              id="answer-yes"
+            />
+            <label class="radio" for="answer-yes">Да</label>
+            <input
+              class="popup-radio unstyle"
+              type="radio"
+              value="0"
+              name="answer"
+              id="answer-no"
+            />
+            <label class="radio" for="answer-no">Нет</label>
+          </div>
+          <label>
+            <span class="popup-text"
+              >Расскажите, какой контент вы хотели бы видеть на нашем
+              сайте?</span
+            >
+            <textarea
+              class="popup-field unstyle"
+              type="text"
+              placeholder="Может больше рецептов?"
+            ></textarea>
+          </label>
+          <button class="popup-button unstyle" type="submit">
+            <a class="link popup-button-link" href="#0">
+              <span class="submit-popup">Отправить</span>
+            </a>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!--Main page-->
     <div class="page">
       <header class="header">
         <div class="box">
@@ -17,11 +74,12 @@
             /></a>
 
             <nav class="menu">
-              <!-- Меню бургер -->
-              <div class="menu-button">
-                <span class="hamburger"></span>
-              </div>
-              <!-- Конец меню бургер -->
+              <button class="menu-button" type="button">
+                <div class="button-menu-container">
+                  <span class="hidden">Открыть меню</span>
+                </div>
+              </button>
+
               <ul class="menu-list">
                 <li class="menu-list-item">
                   <a href="#0" class="link">Главная</a>
@@ -67,7 +125,11 @@
                     <a href="#0" class="tags-link">Interior</a>
                   </li>
                 </ul>
-                <h3 class="post-title">Сейчас в тренде: Сад на подоконнике</h3>
+                <h3 class="post-title">
+                  <a href="#0" class="trends-link"
+                    >Сейчас в тренде: Сад на подоконнике</a
+                  >
+                </h3>
               </div>
             </div>
           </article>
@@ -81,7 +143,10 @@
                   </li>
                 </ul>
                 <h3 class="post-title">
-                  Сыры на красивых картинках из интернета: Какие они на вкус?
+                  <a href="#0" class="trends-link"
+                    >Сыры на красивых картинках из интернета: Какие они на
+                    вкус?</a
+                  >
                 </h3>
               </div>
             </div>
@@ -98,7 +163,11 @@
                     <a href="#0" class="tags-link">Travel</a>
                   </li>
                 </ul>
-                <h3 class="post-title">Собираемся в первый поход в горы</h3>
+                <h3 class="post-title">
+                  <a href="#0" class="trends-link"
+                    >Собираемся в первый поход в горы</a
+                  >
+                </h3>
               </div>
             </div>
           </article>
@@ -115,7 +184,9 @@
                   </li>
                 </ul>
                 <h3 class="post-title">
-                  Сейчас в тренде: Сколько витамина С в лимонах?
+                  <a href="#0" class="trends-link">
+                    Сейчас в тренде: Сколько витамина С в лимонах?</a
+                  >
                 </h3>
               </div>
             </div>
@@ -223,7 +294,7 @@
               <p class="text">
                 Лето на носу, а с ним и музыкальные фестивали. На каждом же из
                 них вы разобьёте свою палатку? Мы составили список лучших летних
-                фстивалей по всему миру.
+                фестивалей по всему миру.
               </p>
             </div>
           </article>
@@ -427,7 +498,8 @@
 
                 <div class="subscribe-btn">
                   <button class="subscribe-button" type="submit">
-                    Подписаться<span class="visually-hidden"
+                    <a href="#0" class="subscription-link">Подписаться</a
+                    ><span class="visually-hidden"
                       >Кнопка отправки запроса на подписку</span
                     >
                   </button>
@@ -515,7 +587,6 @@
       </div>
 
       <!-- Products list -->
-      <!-- TODO!  Select better names for the classes -->
       <div class="products-section">
         <div class="products">
           <h2 class="products-title">Наши изделия</h2>
@@ -539,7 +610,7 @@
               </h3>
               <p class="text-item">
                 Набор из двух подушек с модными принтами. Видео о создании
-                <a href="#" class="products-link">здесь.</a>
+                <a href="#0" class="products-link">здесь.</a>
               </p>
 
               <footer class="product-footer">
@@ -553,7 +624,9 @@
                     <span class="currency">₽</span>
                   </span>
                 </div>
-                <button class="product-button" type="button">В магазин</button>
+                <button class="product-button" type="button">
+                  <a href="#0" class="shopping">В магазин</a>
+                </button>
               </footer>
             </div>
           </article>
@@ -576,7 +649,7 @@
               <p class="text-item">
                 Интерьерная рукодельная кукла "Зайчик", созданию которой
                 посвящена
-                <a href="#" class="products-link">весенняя серия постов</a> в
+                <a href="#0" class="products-link">весенняя серия постов</a> в
                 блоге и несколько подкастов.
               </p>
 
@@ -587,7 +660,9 @@
                     <span class="currency">₽</span>
                   </span>
                 </div>
-                <button class="product-button" type="button">В магазин</button>
+                <button class="product-button" type="button">
+                  <a href="#0" class="shopping">В магазин</a>
+                </button>
               </footer>
             </div>
           </article>
@@ -609,7 +684,7 @@
               </h3>
               <p class="text-item">
                 Необычная рамка для украшения дома из видео
-                <a href="#" class="products-link"
+                <a href="#0" class="products-link"
                   >"Как сделать рамку из подручных средств за 30 минут"
                 </a>
               </p>
@@ -625,7 +700,9 @@
                     <span class="currency">₽</span>
                   </span>
                 </div>
-                <button class="product-button" type="button">В магазин</button>
+                <button class="product-button" type="button">
+                  <a href="#0" class="shopping">В магазин</a>
+                </button>
               </footer>
             </div>
           </article>
